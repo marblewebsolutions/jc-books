@@ -1,0 +1,28 @@
+.nav {
+  align-items: center;
+  background: $primary;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+
+  .nav-link {
+    display: inline-block;
+    margin: 0 1em;
+
+    &:hover {
+      a {
+        color: $white;
+      }
+    }
+
+    &.active {
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .nav-links {
+
+  }
+}

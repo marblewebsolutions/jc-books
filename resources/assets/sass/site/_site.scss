@@ -1,0 +1,71 @@
+// Styles applied to the whole site
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+html {
+  font-size: $font-size-html;
+}
+
+.block {
+  padding: 0 $block-px;
+
+  .content {
+    margin: auto;
+    max-width: $content-max-width;
+    padding: $content-py 0;
+    position: relative;
+  }
+}
+
+.btn {
+  background: $primary;
+  border: 2px solid $primary;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  padding: .5em 1em;
+  transition: all .3s ease;
+
+  &:hover,
+  &.active {
+    background: $white;
+    color: $primary;
+    box-shadow: 4px 4px 10px #aaa;
+  }
+}
+
+.clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+.main {
+  padding: $content-py;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.relative {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
