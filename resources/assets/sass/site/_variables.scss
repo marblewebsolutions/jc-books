@@ -1,21 +1,19 @@
 // Media Queries
-$xxs: 420px;
-$xs: 576px;
-$sm: 768px;
-$med: 992px;
-$lg: 1200px;
+$max-mobile-width: 600px;
+$max-tablet-width: 900px;
+$max-tablet-landscape-width: 1200px;
+$max-desktop-width: 1800px;
 
 // Font Sizes
 $font-size-h1: 3rem;
 $font-size-h2: 2.5rem;
 $font-size-h3: 2rem;
-$font-size-p: 1.5rem;
+$font-size-p: 1.3rem;
 $font-size-html: 12px;
 
 // Layout Spacing
-$block-px: 5%;
-$content-max-width: 80rem;
-$content-py: 2.5rem;
+$box-spacing: 1.5rem;
+$content-max-width: 69rem;
 
 // Z Indexes
 $nav-mobile-z: 900;

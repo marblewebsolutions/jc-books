@@ -1,6 +1,7 @@
 // Styles applied to the whole site
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,20 +11,9 @@ html {
   font-size: $font-size-html;
 }
 
-.block {
-  padding: 0 $block-px;
-
-  .content {
-    margin: auto;
-    max-width: $content-max-width;
-    padding: $content-py 0;
-    position: relative;
-  }
-}
-
 .btn {
-  background: $primary;
-  border: 2px solid $primary;
+  background: $white;
+  border: 2px solid $white;
   color: $white;
   cursor: pointer;
   font-size: 1.5rem;
@@ -33,7 +23,7 @@ html {
   &:hover,
   &.active {
     background: $white;
-    color: $primary;
+    color: $black;
     box-shadow: 4px 4px 10px #aaa;
   }
 }
@@ -46,8 +36,21 @@ html {
   }
 }
 
-.main {
-  padding: $content-py;
+.page {
+  background: $page;
+  box-shadow: 0 0 62px $black-trans-60;
+  margin: auto;
+  max-width: $content-max-width;
+  min-height: 100vh;
+  width: 85%;
+  
+  .page-content {
+    display: none;
+    
+    &.active {
+      display: block;
+    }
+  }
 }
 
 .no-scroll {
@@ -68,4 +71,27 @@ html {
 
 .text-right {
   text-align: right;
+}
+
+.view {
+  background: $page-1;
+  min-height: 100vh;
+  @include transition();
+  width: 100%;
+  
+  &[data-page="home"] {
+    background: $page-1;
+  }
+  
+  &[data-page="story"] {
+    background: $page-2;
+  }
+  
+  &[data-page="books"] {
+    background: $page-3;
+  }
+  
+  &[data-page="connect"] {
+    background: $page-4;
+  }
 }

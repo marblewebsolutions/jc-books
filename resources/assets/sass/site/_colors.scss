@@ -1,6 +1,22 @@
-$accent: #49f;
 $black: #000;
 $black-trans-60: rgba(0, 0, 0, .6);
-$primary: #d83;
-$text: #333;
+$blue: #B6FFFF;
+$cream: #F5FFDF;
+$gray: #a8a8a8;
+$green: #D5FFC4;
+$light-gray: #CCCDCC;
+$pink: #FDA4F4;
+$red: #FF9D9D;
 $white: #fff;
+
+$page: $cream;
+$page-1: $red;
+$page-1-dark: darken($page-1, 30%);
+$page-2: $green;
+$page-2-dark: darken($page-2, 50%);
+$page-3: $blue;
+$page-3-dark: darken($page-3, 50%);
+$page-4: $pink;
+$page-4-dark: darken($page-4, 40%);
+$text: $gray;
+$text-light: $light-gray;

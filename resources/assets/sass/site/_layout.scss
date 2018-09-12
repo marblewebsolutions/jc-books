@@ -1,0 +1,95 @@
+.box {
+    background: $white;
+    border: 3px solid $page-1;
+    box-shadow: 2px 2px 8px $black-trans-60;
+    min-height: 12em;
+    padding: 1em;
+    position: relative;
+    
+    .box-content {
+        padding: 0 5em;
+        text-align: justify;
+    }
+    
+    .box-title {
+        font-family: 'Marck Script', cursive;
+        font-weight: 400;
+        margin-bottom: .4rem;
+    }
+    
+    .bubbles {
+        position: absolute;
+        
+        .bubble {
+            border-radius: 100%;
+            box-shadow: 1px 1px 5px $black;
+            position: absolute;
+        }
+        
+        &-bl {
+            bottom: .5em;
+            height: 4.5em;
+            left: .5em;
+            width: 3.5em;
+            
+            .big {
+                height: 2.5em;
+                width: 2.5em;
+                bottom: 0;
+                left: .5em;
+            }
+            
+            .little {
+                height: 1.3em;
+                width: 1.3em;
+                top: 0;
+                left: 0;
+            }
+        }
+        
+        &-tr {
+            height: 3.5em;
+            top: .5em;
+            right: .5em;
+            width: 6em;
+            
+            .big {
+                height: 3.25em;
+                width: 3.25em;
+                top: .5em;
+                right: 0;
+            }
+            
+            .little {
+                height: 1.8em;
+                width: 1.8em;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+    
+    &:not(:first-child) {
+        margin-top: $box-spacing;
+    }
+}
+
+.content-container {
+    padding: 4em;
+    
+    .content-container-left,
+    .content-container-right {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+    }
+    
+    .content-container-left {
+        padding-right: $box-spacing / 2;
+    }
+    
+    .content-container-right {
+        padding-left: $box-spacing / 2;
+        padding-top: 4em;
+    }
+}

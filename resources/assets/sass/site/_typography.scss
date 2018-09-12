@@ -3,6 +3,7 @@ a {
 }
 
 a,
+li,
 p {
   font-size: $font-size-p;
 }
@@ -28,10 +29,34 @@ h3 {
   font-size: $font-size-h3;
 }
 
+html {
+  font-family: 'Antic Slab', serif;
+}
+
 img {
   width: 100%;
 }
 
 ul {
   list-style: none;
+}
+
+.antic-slab {
+  font-family: 'Antic Slab', serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.large-text {
+  font-size: 1.6em;
+}
+
+.marck-script {
+  font-family: 'Marck Script', cursive;
+}
+
+.text-light {
+  color: $text-light;
 }

@@ -2,12 +2,16 @@
 // Google Icons
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Antic+Slab|Marck+Script');
+
 // Site
 @import "site/_colors";
 @import "site/_mixins";
 @import "site/_variables";
 
 @import "site/_animations";
+@import "site/_layout";
 @import "site/_site";
 @import "site/_typography";
 
@@ -18,4 +22,7 @@
 @import "partials/_nav";
 
 // Pages
+@import "pages/_books";
+@import "pages/_connect";
 @import "pages/_home";
+@import "pages/_story";
