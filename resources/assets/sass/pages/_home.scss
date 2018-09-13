@@ -5,8 +5,32 @@
     }
   }
   
+  .box-intro {
+    padding: 2em 1em 6em;
+    
+    .img-container {
+      float: right;
+      padding: 0 0 1.5em 1.5em;
+      width: 46%;
+      
+      img {
+        @include box-shadow();
+      }
+    }
+  }
+  
   .page-title {
     font-size: 5em;
     text-align: center;
+  }
+  
+  @media screen and (max-width: $sm-width) {
+    .box-intro {
+      .img-container {
+        float: none;
+        padding: 0 0 2em;
+        width: 100%;
+      }
+    }
   }
 }

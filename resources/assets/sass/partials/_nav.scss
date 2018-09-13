@@ -87,4 +87,41 @@
       z-index: 1;
     }
   }
+  
+  @media screen and (max-width: $sm-width) {
+    .com {
+      font-size: 1.7rem;
+      top: -21px;
+      right: -43px;
+    }
+  
+    .nav-link {
+      font-size: 1.1rem;
+      margin: 0 .08em;
+      padding: .2em 0;
+      width: 5.25rem;
+      
+      &:hover {
+        padding: .5em 0 .2em;
+      }
+      
+      &.active {
+        padding: 1em 0 .2em;
+      }
+    }
+    
+    .nav-links {
+      left: -20px;
+      padding: 0;
+    }
+    
+    .site-title-container {
+      left: -20px;
+      top: 6px;
+      
+      .site-title {
+        font-size: 2.5em;
+      }
+    }
+  }
 }

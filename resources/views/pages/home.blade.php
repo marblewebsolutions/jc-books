@@ -1,6 +1,8 @@
 <div class="content-container">
-    <div class="box">
+    <div class="box box-pb box-intro">
         <div class="box-content">
+            <p class="img-container"><img src="../images/mama.png" alt="Julia Cawood"></p>
+            
             <p><span class="bold large-text">Welcome to Cawood Books.</span>  Creating stories has always been a passion of mine and I am finally taking the time to navigate the publishing process.  I look forward to publishing multiple children’s picture books in the next several years.</p>
 
             <p class="mt-med">It is my hope to get as many books in the hands of children as I can.  With this goal, I understand that many are not as fortunate to be able to afford their own books.  With this in mind, I am pledging to donate one book for every five books sold. I will distribute to area schools and community centers, contacting their social workers or coordinators to ensure distribution of the donated books go to children who may benefit the most from receiving it.</p>
@@ -13,7 +15,7 @@
         </div>
     </div>
     
-    <div class="box">
+    <div class="box hide">
         <h2 class="box-title">Next Event:</h2>
         
         @include('partials.bubbles-tr')
@@ -28,7 +30,7 @@
             <p class="mt-med">Please visit the site often to preview upcoming events.</p>
         </div>
         
-        @include('partials.bubbles-bl')
+        @include('partials.bubbles-tr')
     </div>
 </div>
 

@@ -1,5 +1,5 @@
 <div class="content-container">
-    <div class="box">
+    <div class="box box-pb">
         <h2 class="box-title">Julia Cawood:</h2>
         
         <div class="box-content">
@@ -23,7 +23,7 @@
         @include('partials.bubbles-tr')
     </div>
     
-    <div class="box">
+    <div class="box hide">
         <h2 class="box-title">Inspiration</h2>
         
         @include('partials.bubbles-bl')

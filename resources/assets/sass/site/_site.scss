@@ -36,6 +36,14 @@ html {
   }
 }
 
+.hide {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+
 .page {
   background: $page;
   box-shadow: 0 0 62px $black-trans-60;

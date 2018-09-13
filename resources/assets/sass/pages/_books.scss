@@ -7,4 +7,26 @@
             background: $page-3;
         }
     }
+    
+    .box-aitpd {
+        .img-container {
+            float: right;
+            padding: 0 0 1.5em 1.5em;
+            width: 46%;
+            
+            img {
+                @include box-shadow();
+            }
+        }
+    }
+    
+    @media screen and (max-width: $sm-width) {
+        .box-aitpd {
+            .img-container {
+                float: none;
+                padding: 2em 0;
+                width: 100%;
+            }
+        }
+    }
 }
