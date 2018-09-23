@@ -14,7 +14,7 @@
     </div>
     
     <div class="box">
-        <h2 class="box-title">Mirable The Butterfly</h2>
+        <h2 class="box-title">Mirabelle The Butterfly</h2>
         
         <div class="box-content">
             <p>Mirabelle the Butterfly is the story of a young elephant that wakes up one morning with the desire to become a butterfly.  Despite her parents’ doubt, Mirabelle is confident with her pursuit.  Mirabelle’s transformation, through her use of observation and imagination, tenderly unfolds in the story.  By the end of the tale, Mirabelle’s parents discover that she has the determination and the belief to be anything she chooses to become.  Mirabelle’s story reinforces to children the importance of imagination and discovery, as well as belief in oneself.</p>
