@@ -1,4 +1,8 @@
 <!doctype html>
+<?php 
+    $page = (session()->has('page') ? session('page') : 'home');
+?>
+
 <html lang="{{ app()->getLocale() }}">
 <head>
     <title>Julie Cawood Books</title>
@@ -14,14 +18,19 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <div class="view view-js" data-page='home'>
+    <div class="view view-js" data-page='{{ $page }}'>
         <div class="page">
             @include('partials.nav')
             
-            <div class="page-content page-content-js home home-content-js active">@include('pages.home')</div>
-            <div class="page-content page-content-js story story-content-js">@include('pages.story')</div>
-            <div class="page-content page-content-js books books-content-js">@include('pages.books')</div>
-            <div class="page-content page-content-js connect connect-content-js">@include('pages.connect')</div>
+            <div class="page-content page-content-js home home-content-js {{ $page == 'home' ? 'active' : '' }}">@include('pages.home')</div>
+            <div class="page-content page-content-js story story-content-js {{ $page == 'story' ? 'active' : '' }}">@include('pages.story')</div>
+            <div class="page-content page-content-js books books-content-js {{ $page == 'books' ? 'active' : '' }}">@include('pages.books')</div>
+            <div class="page-content page-content-js connect connect-content-js {{ $page == 'connect' ? 'active' : '' }}">@include('pages.connect')</div>
+        </div>
+        
+        <div class="alert {{ ((session('status') && session('status') == 'success') ? 'active' : '') }}">
+            <p class="alert-title">Successfully Placed Order!</p>
+            <p class="alert-description">Thank you for purchasing Ants in the Pants Dance.</p>
         </div>
     </div>
 

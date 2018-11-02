@@ -1,4 +1,13 @@
 .books {
+    .atc-container {
+        .atc-number {
+            border: 1px solid transparentize($black, .7);
+            border-radius: 8px;
+            max-width: 5em;
+            padding: .5em;
+        }
+    }
+    
     .box {
         border-color: $page-3;
         
@@ -17,6 +26,63 @@
             img {
                 @include box-shadow();
             }
+        }
+    }
+    
+    .box-checkout {
+        display: none;
+        
+        &.active {
+            display: block;
+        }
+    }
+    
+    .order-container {
+        input {
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+            
+            &[type="number"] {
+                border: 1px solid transparentize($black, .7);
+                border-radius: 8px;
+                max-width: 5em;
+                padding: .5em;
+            }
+        }
+        
+        .form-group {
+            display: inline-block;
+            vertical-align: baseline;
+            
+            label {
+                display: block;
+                font-size: 14px;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+    .confirm-order-container {
+        border-top: 1px solid $text;
+        display: none;
+        margin-top: 20px;
+        padding-top: 20px;
+        
+        .order-summary {
+            font-size: 16px;
+            
+            td,
+            th {
+                padding: .25em 1em 0 0;
+            }
+        }
+        
+        .shipping,
+        .tax {
+            font-size: 12px;
+            font-weight: 300;
         }
     }
     

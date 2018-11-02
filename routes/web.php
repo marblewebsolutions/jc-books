@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'PageController@index');
+Route::post('checkout', 'CheckoutController@checkout');

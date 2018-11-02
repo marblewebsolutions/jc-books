@@ -21,8 +21,6 @@ Nav.initialize = function() {
         
         // Change background color
         $view.attr('data-page', page);
-        console.log($view.attr('page'));
-        
     });
 }
 

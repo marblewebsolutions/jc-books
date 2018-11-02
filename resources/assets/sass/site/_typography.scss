@@ -2,18 +2,10 @@ a {
   text-decoration: none;
 }
 
+label,
 li,
 p {
   font-size: $font-size-p;
-}
-
-a,
-h1,
-h2,
-h3,
-li,
-p {
-  color: $text;
 }
 
 h1 {
@@ -29,6 +21,7 @@ h3 {
 }
 
 html {
+  color: $text;
   font-family: 'Antic Slab', serif;
 }
 
