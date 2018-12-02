@@ -30,7 +30,7 @@ class CheckoutController extends Controller {
     private function order($id, $quantity) {
         // Set your secret key: remember to change this to your live secret key in production
         // See your keys here: https://dashboard.stripe.com/account/apikeys
-        \Stripe\Stripe::setApiKey(env(STRIPE_SK));
+        \Stripe\Stripe::setApiKey(env('STRIPE_SK'));
         
         $product = \Stripe\Product::retrieve($id);
         
