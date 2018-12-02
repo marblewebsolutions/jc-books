@@ -11,7 +11,7 @@ class CheckoutController extends Controller {
         $quantity = $request->quantity;
         
         $valid_book_ids = [
-          'aitpd'  
+          'prod_E5D7IzDkiNGTRD'  
         ];
         
         $success = true;

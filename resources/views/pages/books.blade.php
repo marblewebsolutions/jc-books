@@ -12,7 +12,7 @@
             <div class="order-container mt-med" data-book="aitpd">
                 <form class="mt-med" action="{{action('CheckoutController@checkout')}}" method="POST">
                     <input type="hidden" name="book" value="Ants in the Pants Dance">
-                    <input type="hidden" name="book_id" value="aitpd">
+                    <input type="hidden" name="book_id" value="prod_E5D7IzDkiNGTRD">
                     {{ csrf_field() }}
                     
                     <div class="form-group">
