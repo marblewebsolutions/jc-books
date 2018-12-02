@@ -1,7 +1,7 @@
 <div class="content-container">
     <div class="box box-pb box-intro">
         <div class="box-content">
-            <p class="img-container"><img src="../images/mama.png" alt="Julia Cawood"></p>
+            <p class="img-container"><img src="../images/julie.jpg" alt="Julia Cawood"></p>
             
             <p><span class="bold large-text">Welcome to Cawood Books.</span>  Creating stories has always been a passion of mine and I am finally taking the time to navigate the publishing process.  I look forward to publishing multiple children’s picture books in the next several years.</p>
 
