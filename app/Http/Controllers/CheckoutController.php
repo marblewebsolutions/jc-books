@@ -5,17 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class CheckoutController extends Controller {
+    const BOOK_IDS_SKUS = [
+      'prod_E5D7IzDkiNGTRD' => 'sku_E7q4qCdwGYcXaA'
+    ];
+  
     public function checkout(Request $request) {
         $book = $request->book;
         $book_id = $request->book_id;
         $quantity = $request->quantity;
         
-        $valid_book_ids = [
-          'prod_E5D7IzDkiNGTRD'  
-        ];
-        
         $success = true;
-        if (in_array($book_id, $valid_book_ids)) {
+        if (in_array($book_id, array_keys(self::BOOK_IDS_SKUS))) {
           $success = $this->order($book_id, $quantity);
         }
                 
@@ -42,7 +42,7 @@ class CheckoutController extends Controller {
           "items" => array(
             array(
               "type" => "sku",
-              "parent" => "aitpd",
+              "parent" => self::BOOK_IDS_SKUS[$id],
               "quantity" => $quantity
             )
           ),

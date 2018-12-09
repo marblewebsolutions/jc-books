@@ -36,7 +36,7 @@
                         <div class="stripe-button-container">
                             <script
                                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                                data-key="pk_test_jKMqSRL0Rroj2PZpvChFWvl4"
+                                data-key="pk_live_u79NszOKWa9VuffRUbUb0X0B"
                                 data-amount="1750"
                                 data-name="Ants in the Pants Dance"
                                 data-description="Children's Book"
