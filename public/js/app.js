@@ -10565,9 +10565,9 @@ var initializeCart = function initializeCart() {
 
             $.each(order, function (bookId, quantity) {
                 if (bookId == "aitpd") {
-                    orderHtml += "<tr><td class='title'>Ants in the Pants Dance</td> <td class='quantity'>x " + quantity + "</td> <td class='price'>$17.50 ea.</td></tr>";
+                    orderHtml += "<tr><td class='title'>Ants in the Pants Dance</td> <td class='quantity'>x " + quantity + "</td> <td class='price'>$19.00 ea.</td></tr>";
 
-                    var price = 17.5;
+                    var price = 19.0;
                     total += price * quantity;
                 }
             });
@@ -10593,7 +10593,7 @@ var initializeOrdering = function initializeOrdering() {
         var $quantity = $confirmOrderContainer.find('.quantity');
         var $price = $confirmOrderContainer.find('.price');
         var $total = $confirmOrderContainer.find('.total');
-        var $shipping = $confirmOrderContainer.find('.shipping');
+        //var $shipping = $confirmOrderContainer.find('.shipping');
 
         quantity = $quantityInput.val();
         var price = $price.data('price');
@@ -10606,15 +10606,8 @@ var initializeOrdering = function initializeOrdering() {
         $quantity.html(quantity);
         $total.html("$" + total);
 
-        // Shipping free over $70
-        if (total > 70) {
-            $shipping.hide();
-            total = total * 1.06;
-        } else {
-            $shipping.show();
-            total = total * 1.06;
-            total += 5;
-        }
+        // Add taxes
+        total = total * 1.06;
 
         var stripeScript = '<script ' + 'src="https://checkout.stripe.com/checkout.js" class="stripe-button" ' + 'data-key="pk_live_u79NszOKWa9VuffRUbUb0X0B" ' + 'data-amount="' + total * 100 + '" ' + 'data-name="Ants in the Pants Dance" ' + 'data-description="Children\'s Book" ' + 'data-image="https://stripe.com/img/documentation/checkout/marketplace.png" ' + 'data-shipping-address="true" ' + 'data-locale="auto" ' + 'data-quantity="true" ' + 'data-label="Confirm Order">' + '</script>';
 

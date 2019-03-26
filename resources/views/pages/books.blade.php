@@ -29,15 +29,15 @@
                         
                         <p class="bold mb-sm">Ants in the Pants Dance</p>
                         
-                        <p class="mb-sm"><span class="price" data-price="17.5">$17.50</span> x <span class="quantity">1</span></span></p>
+                        <p class="mb-sm"><span class="price" data-price="19.0">$19.00</span> x <span class="quantity">1</span></span></p>
                         
-                        <p class="bold mb-med">Total: <span class="total">$17.50</span> <span class="tax">+ tax</span> <span class="shipping">+ $5.00 shipping</span></p>
+                        <p class="bold mb-med">Total: <span class="total">$19.00</span> <span class="tax">+ tax</span></p>
                         
                         <div class="stripe-button-container">
                             <script
                                 src="https://checkout.stripe.com/checkout.js" class="stripe-button"
                                 data-key="pk_live_u79NszOKWa9VuffRUbUb0X0B"
-                                data-amount="1750"
+                                data-amount="1900"
                                 data-name="Ants in the Pants Dance"
                                 data-description="Children's Book"
                                 data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
