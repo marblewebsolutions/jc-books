@@ -59,10 +59,20 @@
         <h2 class="box-title">Mirabelle The Butterfly</h2>
         
         <div class="box-content">
-            <p>Mirabelle the Butterfly is the story of a young elephant that wakes up one morning with the desire to become a butterfly.  Despite her parents’ doubt, Mirabelle is confident with her pursuit.  Mirabelle’s transformation, through her use of observation and imagination, tenderly unfolds in the story.  By the end of the tale, Mirabelle’s parents discover that she has the determination and the belief to be anything she chooses to become.  Mirabelle’s story reinforces to children the importance of imagination and discovery, as well as belief in oneself.</p>
+            <p><i>Mirabelle the Butterfly</i> is the story of a young elephant that wakes up one morning with the desire to become a butterfly.  Despite her parents’ doubt, Mirabelle is confident with her pursuit.  Mirabelle’s transformation, through her use of observation and imagination, tenderly unfolds in the story.  By the end of the tale, Mirabelle’s parents discover that she has the determination and the belief to be anything she chooses to become.  Mirabelle’s story reinforces to children the importance of imagination and discovery, as well as belief in oneself.</p>
         </div>
         
         @include('partials.bubbles-tr')
+    </div>
+    
+    <div class="box">
+        <h2 class="box-title">Finnegan’s Journey</h2>
+        
+        <div class="box-content">
+            <p><i>Finnegan’s Journey</i> is a whimsical story about an adventurous day in the life of a little mouse.  Having grown up in his family den hearing of the exploits of his daring uncle, Fred Finnegan, young Finnegan longs to have the same type of exploration.  As luck would have it, he seizes the opportunity early one morning jumping on the back of a boy’s backpack.  And he does get what he has always wished for: a grand adventure. Perhaps a bit too much of an adventure for his own good.  Along the way, Finnegan discovers that an adventurer’s life may be exciting but it is not all fun and games and, perhaps, just maybe his “ordinary life” back home may not be so bad after all.</p>
+        </div>
+        
+        @include('partials.bubbles-bl')
     </div>
     
     <div class="box box-checkout">

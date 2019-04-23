@@ -45,6 +45,23 @@ ul {
   font-size: 1.6em;
 }
 
+.list-item {
+  padding-left: 30px;
+  position: relative;
+  
+  &:before {
+    background: $page-1;
+    border-radius: 100%;
+    box-shadow: 1px 1px 5px rgba($black, .5);
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 4px;
+    width: 10px;
+  }
+}
+
 .marck-script {
   font-family: 'Marck Script', cursive;
 }
